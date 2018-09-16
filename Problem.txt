@@ -1,0 +1,53 @@
+THREE DIMENSIONAL SIMULATION OF SPACE.
+State is defined as-
+• The current position in terms of x, y, z coordinates.
+• The current velocity in x, y, z axis
+• Radius of the object
+• Mass of the object
+The solar system consists of stars, planets and asteroids as space objects. Consider a hypothetical
+situation where the only forces influencing the space objects is the gravitational force between
+them.
+You are given a dataset representing the current state of the solar system and time is denoted by
+‘t’.
+Your objective is to simulate and arrive at the state of all space objects when t = 1e+6 (unless
+otherwise specified for the test case).
+Constraints:
+● General:
+➢ Smallest unit of time for simulation is 1-unit time, i.e. time can only be an integer
+➢ 1e+14 < Mass of stars <= 1e+15 units
+➢ 1e+4 < Mass of planets <= 1e+7 units
+➢ 0 < Mass of asteroid <= 0.01 units
+➢ Consider Acceleration to be constant during each time interval dt = 1-unit time.
+➢ Consider G = 7*1e+4 units
+● Collision Mechanism:
+➢ Collisions between Planet-Planet and Planet-Star are not taken into consideration and
+hence, do not exist in the dataset.
+➢ Collisions between asteroid-planet and asteroid-star leads to destruction of the
+asteroid.
+➢ Collisions between asteroid-asteroid leads to the destruction of both the asteroids.
+Objective:
+ You are to note the time at which the collision takes place.
+ You are to note the time at which the asteroid goes too far away from the sun, i.e. beyond
+6*1e+10 unit of distance.
+Note that, any activity of the space system taking place at a distance beyond 6*1e10 is not taken
+into consideration.
+You are given basic modules to read/save data into an excel file. All you need to do is to build
+the logical module for the question above.
+Evaluation will be done on the basis of:
+● Primary Evaluation is done in such a way as to check accuracy of time of collision of
+asteroid.
+● Secondary Evaluation is done in such a way as to check accuracy of state of space
+objects.
+● Efficiency of your program may also be tested in case of a draw.
+Sample Test Cases:
+Orbit: 1M units of time, 2 objects
+The answer for Orbit is the excel sheet named “Orbit Final”.
+Sample 1: 0.1M units of time, 4 objects
+The answer for Sample 1 is the excel sheet named “Final 1”.
+Sample 2: 0.1M units of time, 4 objects
+The answer for Sample 2 is the excel sheet named “Final 2”.
+Test Cases:
+Test2: 0.7M units of time, 7 objects.
+Test 3: 1M units of time, 7 objects.
+Test 4: 1M units of time, 10 objects.
+Test 5: 0.8M units of time, 10 objects
